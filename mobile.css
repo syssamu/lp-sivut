@@ -1,18 +1,33 @@
-#header-bg{
-    width: 100%;
-}
-
-body{
+.wrapper{
     display: grid;
-    grid-template-columns: auto;
+    grid-template-columns: 15% 1fr 15%;
+    grid-template-rows: 20% 5% auto 80px;
+    grid-template-areas: 
+        "header header header"
+        "button empty join-btn"
+        "main main main"
+        "footer footer footer";
 }
 
-header{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+.logo{
+    grid-area: header;
 }
 
+.dropdown{
+    grid-area: button;
+}
+
+#join-btn{
+    grid-area: join-btn;
+}
+
+.main-text{
+    grid-area: main;
+}
+
+#footer{
+    grid-area: footer;
+}
 /* dropdown menu */
 
 .button{
