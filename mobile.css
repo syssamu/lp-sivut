@@ -9,7 +9,7 @@
     --bg-color: #fff;
     --text-box-color: #fff;
     --button-color: #626e60;
-    --footer-color: #3c3c3c;
+    --footer-color: #3c3c3c4d;
     --text-box-color2: #945d60;
 }
 
@@ -36,14 +36,15 @@
 
 .join-btn{
     grid-area: join-btn;
-    height: 100%;
-    width: 100%;
-    text-align: center;
-    text-decoration: none;
     background-color: var(--button-color);
-    color: #000;
     font-size: 16px;
     border: none;
+}
+
+.join-btn a{
+    display: block;
+    text-decoration: none;
+    color: #000;
 }
 
 .main-text{
@@ -92,6 +93,7 @@ h4{
 .footer{
     grid-area: footer;
     text-align: center;
+    border-top: 1px solid #3c3c3c;
     background-color: var(--footer-color);
 }
 
