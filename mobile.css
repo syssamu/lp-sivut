@@ -11,6 +11,11 @@
     --button-color: #626e60;
     --footer-color: #3c3c3c4d;
     --text-box-color2: #945d60;
+    
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
 }
 
 .wrapper{
@@ -23,6 +28,11 @@
         "main main main"
         "footer footer footer";
     background-color: var(--bg-color);
+    background-image: url(jad-limcaco-1305456-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 100%;
+    height: 25vh;
 }
 
 .main-img{
@@ -32,69 +42,7 @@
 .logo{
     grid-area: header;
     text-align: center;
-}
-
-.join-btn{
-    grid-area: join-btn;
-    background-color: var(--button-color);
-    font-size: 16px;
-    border: none;
-}
-
-.join-btn a{
-    display: block;
-    text-decoration: none;
-    color: #000;
-}
-
-.main-text{
-    grid-area: main;
-}
-
-h2{
-    text-align: center;
-    padding: 6%;
-}
-
-.basic-text{
-    padding: 0% 5%;
-}
-
-.calendar ul{
-    background-color: var(--text-box-color);
-    margin: 0 1%;
-    padding: 2% 15%;
-}
-
-h3{
-    text-align: center;
     padding: 3%;
-}
-
-h4{
-    padding: 2% 5%;
-}
-
-.times{
-    background-color: var(--text-box-color2);
-    margin: 10%;
-    padding: 2%;
-    border-radius: 1%;
-}
-
-.times h4{
-    text-align: center;
-}
-
-.times p{
-    text-align: center;
-}
-
-.footer{
-    grid-area: footer;
-    text-align: center;
-    border-top: 1px solid #3c3c3c;
-    background-color: var(--footer-color);
 }
 
 /* dropdown menu */
@@ -150,4 +98,111 @@ h4{
 
 .dropdown:hover .dropdown-content {
     display: block;
+}
+
+/* join button*/
+
+.join-btn{
+    grid-area: join-btn;
+    background-color: var(--button-color);
+    font-size: 16px;
+    border: none;
+}
+
+.join-btn a{
+    display: block;
+    text-decoration: none;
+    color: #000;
+}
+
+/* */
+
+.main-text{
+    grid-area: main;
+}
+
+h2{
+    text-align: center;
+    padding: 6%;
+}
+
+.basic-text{
+    padding: 0% 5%;
+    padding-bottom: 2%;
+    font-family: 'Roboto Slab', serif;
+}
+
+
+h3{
+    text-align: center;
+    padding: 5% 5% 2% 5%;
+    font-size: 20px;
+}
+
+h4{
+    padding: 2% 5%;
+}
+/* calendar */
+
+.calendar h4{
+    margin-left: 8%;
+    padding-top: 4%;
+    padding-bottom: 1%;
+}
+
+.calendar{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.calendar ul{
+    background-color: var(--text-box-color);
+    margin: 0 1%;
+    padding: 2% 15%;
+    list-style: none;
+}
+
+.calendar li{
+    padding: 1% 0;
+}
+
+/* text block */
+
+.times{
+    background-color: var(--text-box-color2);
+    margin: 10%;
+    padding: 2%;
+    padding-bottom: 5%;
+    border-radius: 1%;
+}
+
+.times h4{
+    text-align: center;
+    padding-top: 4%;
+    padding-bottom: 1%;
+}
+
+.times p{
+    text-align: center;
+}
+
+/* footer */
+
+.footer{
+    grid-area: footer;
+    text-align: center;
+    border-top: 1px solid #3c3c3c;
+    background-color: var(--footer-color);
+}
+
+.social{
+    padding: 2%;
+}
+
+.social a{
+    color: #000;
+}
+
+.social i{
+    padding: 0 2%;
 }
