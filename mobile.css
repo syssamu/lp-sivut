@@ -10,7 +10,7 @@
     --text-box-color: #fff;
     --button-color: #626e60;
     --footer-color: #3c3c3c4d;
-    --text-box-color2: #945d60;
+    --text-box-color2: /*#945d60*/ #c4c4c4;
     
 }
 
@@ -37,6 +37,11 @@ body{
 
 .main-img{
     width: 100%;
+}
+
+.history-img{
+    width: 100%;
+    padding: 5%;
 }
 
 .logo{
@@ -170,6 +175,7 @@ h4{
 
 .times{
     background-color: var(--text-box-color2);
+    border: #000 1px solid;
     margin: 10%;
     padding: 2%;
     padding-bottom: 5%;
