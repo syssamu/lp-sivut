@@ -79,7 +79,6 @@ body{
 
 .dropdown-content li {
     color: black;
-    padding: 20px 50px;
     text-decoration: none;
     display: block;
     border-bottom: 1px solid black;
@@ -94,6 +93,7 @@ body{
 }
 
 .dropdown-content li a{
+    padding: 20px 50px;
     display: block;
     font-size: 18px;
     color: #000000;
@@ -153,6 +153,10 @@ h5{
 
 /* info-list */
 
+.info-list{
+    padding-bottom: 3%;
+}
+
 .info-list ul{
     list-style: none;
     padding-left: 7%;
@@ -160,10 +164,6 @@ h5{
 
 .info-list h5{
     padding: 1% 0;
-}
-
-.x{
-    margin: 30%;
 }
 
 /* calendar */
