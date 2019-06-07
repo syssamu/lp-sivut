@@ -57,60 +57,42 @@ body{
 
 .button{
     display: none;
-    width: 100%;
-    height: 100%;
-    background-color: var(--button-color);
-    color: #000;
-    font-size: 16px;
-    border: none;
 }
 
-.dropdown {
+.dropdown{
     grid-area: nav;
-    position: relative;
-    display: inline-block;
 }
 
-.dropdown-content {
-    grid-area: nav;
+.dropdown-content{
     display: flex;
     flex-flow: row nowrap;
-    position: absolute;
     padding: 0;
     background-color: grey;
+}
+
+.dropdown-content li{
     width: 100%;
     height: 100%;
-    min-width: 160px;
-    z-index: 1;
-}
-
-.dropdown-content li {
-    color: black;
-    height: 100%;
-    text-decoration: none;
-    display: inline-block;
     border-right: 1px solid black;
+    list-style: none;
+    text-align: center;
 }
 
-.dropdown-content li:last-child{
-    border-right: none;
+.dropdown-content li a{
+    display: block;
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    height: 43px;
+    padding-top: 0.8em;
 }
 
 .active-link{
     background-color: #945d60;
 }
 
-.dropdown-content li a{
-    padding: 18px 50px;
-    display: block;
-    font-size: 18px;
-    color: #000000;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
+.dropdown-content li:last-child{
+    border-right: none;
 }
 
 /* join button*/
@@ -148,6 +130,10 @@ body{
     grid-area: text;
 }
 
+.textblock2{
+    grid-area: header2;
+}
+
 h2{
     text-align: center;
     padding: 6%;
@@ -157,7 +143,6 @@ h2{
     padding: 2% 5%;
     font-family: 'Roboto Slab', serif;
 }
-
 
 h3{
     text-align: center;
@@ -237,6 +222,10 @@ h5{
 
 .times p{
     text-align: center;
+}
+
+.join-info{
+    grid-area: header2;
 }
 
 /* footer */
