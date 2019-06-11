@@ -27,10 +27,10 @@ body{
         "nav nav nav"
         "main main main"
         "footer footer footer";
-    max-width: 1500px;
+    max-width: 1200px;
     margin: auto;
     background-color: var(--bg-color);
-    background-image: url(jad-limcaco-1305456-unsplash.jpg);
+    background-image: url(../img/lp-banner-img.jpg);
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: 100%;
@@ -83,8 +83,9 @@ body{
     color: #000;
     text-decoration: none;
     font-weight: bold;
-    height: 43px;
-    padding-top: 0.8em;
+    height: 100%;
+    padding-top: 0.9em;
+    padding-bottom: 0.9em;
 }
 
 .active-link{

@@ -28,9 +28,9 @@ body{
         "main main main"
         "footer footer footer";
     background-color: var(--bg-color);
-    background-image: url(jad-limcaco-1305456-unsplash.jpg);
+    background-image: url(../img/lp-banner-img.jpg);
     background-repeat: no-repeat;
-    background-position: bottom;
+/*    background-position: bottom;*/
     background-size: 100%;
     height: 25vh;
 }
