@@ -21,18 +21,16 @@ body{
 .wrapper{
     display: grid;
     grid-template-columns: 20% 1fr 20%;
-    grid-template-rows: 20vh 5vh auto auto;
+    grid-template-rows: 20vh 5vh auto 80px;
     grid-template-areas: 
         "header header header"
-        "nav nav nav"
+        "button empty join-btn"
         "main main main"
         "footer footer footer";
-    max-width: 1500px;
-    margin: auto;
     background-color: var(--bg-color);
-    background-image: url(jad-limcaco-1305456-unsplash.jpg);
+    background-image: url(../img/lp-banner-img.jpg);
     background-repeat: no-repeat;
-    background-position: bottom;
+/*    background-position: bottom;*/
     background-size: 100%;
     height: 25vh;
 }
@@ -55,49 +53,61 @@ body{
 /* dropdown menu */
 
 .button{
-    display: none;
-}
-
-.dropdown{
-    grid-area: nav;
-}
-
-.dropdown-content{
-    display: flex;
-    flex-flow: row nowrap;
-    padding: 0;
-    background-color: grey;
-}
-
-.dropdown-content li{
     width: 100%;
     height: 100%;
-    border-right: 1px solid black;
-    list-style: none;
-    text-align: center;
+    background-color: var(--button-color);
+    color: #000;
+    font-size: 16px;
+    border: none;
 }
 
-.dropdown-content li a{
-    display: block;
-    color: #000;
+.dropdown {
+    grid-area: button;
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    padding: 0;
+    background-color: grey;
+    width: 70vw;
+    min-width: 160px;
+    z-index: 1;
+}
+
+.dropdown-content li {
+    color: black;
     text-decoration: none;
-    font-weight: bold;
-    height: 43px;
-    padding-top: 0.8em;
+    display: block;
+    border-bottom: 1px solid black;
+}
+
+.dropdown-content li:last-child{
+    border-bottom: none;
 }
 
 .active-link{
     background-color: #945d60;
 }
 
-.dropdown-content li:last-child{
-    border-right: none;
+.dropdown-content li a{
+    padding: 20px 50px;
+    display: block;
+    font-size: 18px;
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
 }
 
 /* join button*/
 
 .join-btn{
-    display: none;
     grid-area: join-btn;
     background-color: var(--button-color);
     font-size: 16px;
@@ -110,63 +120,11 @@ body{
     color: #000;
 }
 
-/* layout */
+/* */
 
 .main-text{
     grid-area: main;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto auto auto auto auto;
-    grid-template-areas: 
-        "text text"
-        "main-img main-img"
-        "block-left block-right"
-        "header2 header2"
-        "main-left main-right"
-        "main-left empty";
 }
-
-.textblock, #lo-kamppa-img{
-    grid-area: text;
-}
-
-.textblock2, #lo-osastot{
-    grid-area: header2;
-}
-
-.main-img{
-    grid-area: main-img;
-}
-
-.main-text h3{
-    grid-area: header2;
-}
-
-#lo-calendar{
-    grid-area: main-left;
-}
-
-#lo-times{
-    grid-area: main-right;
-}
-
-.join-info{
-    grid-area: header2;
-}
-
-#jn{
-    grid-area: block-left;
-}
-
-#tmh{
-    grid-area:  block-right;
-}
-
-#lo-adr{
-    grid-area: empty;
-}
-
-/* */
 
 h2{
     text-align: center;
@@ -177,6 +135,7 @@ h2{
     padding: 2% 5%;
     font-family: 'Roboto Slab', serif;
 }
+
 
 h3{
     text-align: center;
@@ -209,15 +168,15 @@ h5{
 
 /* calendar */
 
-.calendar{
-    width: 90%;
-    margin: 0 auto;
-}
-
 .calendar h4{
     margin-left: 8%;
     padding-top: 4%;
     padding-bottom: 1%;
+}
+
+.calendar{
+    width: 90%;
+    margin: 0 auto;
 }
 
 .calendar ul{
@@ -236,7 +195,7 @@ h5{
 .times{
     background-color: var(--text-box-color2);
     border: #000 1px solid;
-    margin: 2%;
+    margin: 10%;
     padding: 2%;
     padding-bottom: 5%;
     border-radius: 1%;
