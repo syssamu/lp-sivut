@@ -155,11 +155,11 @@ body{
     grid-area: header2;
 }
 
-#jn{
+#jn, #maintenance{
     grid-area: block-left;
 }
 
-#tmh{
+#tmh, #gear-list{
     grid-area:  block-right;
 }
 
